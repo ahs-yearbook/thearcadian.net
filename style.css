@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Calder LC';
-  url('https://db.onlinewebfonts.com/t/3b62e4142e100992a53bc3c8fd657f1d.woff') format('woff')
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap')
 
 html {
   font-family: 'Calder LC', Helvetica, Roboto, sans-serif;
