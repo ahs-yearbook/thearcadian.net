@@ -30,12 +30,20 @@ html {
 	box-sizing: border-box;
 }
 
+nav {
+	text-transform: uppercase;
+}
 nav a{
 	display: block;
-	text-transform: uppercase;
 	color: black;
 	font-size: .7rem;
 	margin-bottom: 1rem;
+}
+nav::before{
+	content: 'The Arcadian';
+	font-size: 1.4rem;
+	position: absolute;
+	right: 2rem;
 }
 
 /* The amount of space around the text */
