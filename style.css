@@ -30,7 +30,7 @@ html {
 	box-sizing: border-box;
 }
 
-nav a{
+nav :link{
 	display: block;
 	text-transform: uppercase;
 	color: black;
