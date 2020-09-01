@@ -9,10 +9,15 @@ const sitemap = {
 }
 const menu = document.createElement('nav')
 for ( page in sitemap ) {
+	const item = document.createElement('li')
 	const anchor = document.createElement('a')
 	anchor.textContent = page
 	anchor.href = sitemap[page]
-	menu.append(anchor)
+	if ( window.location.pathname.split('.')[0].includes(sitemap[page]) ){
+		anchor.classList.add('current')
+	}
+	item.append(anchor)
+	menu.append(item)
 }
 const main = document.createElement('main')
 document.addEventListener('DOMContentLoaded',()=>{

@@ -1,6 +1,7 @@
 /* Display settings */
 body {
-	background: hsl(275deg,50%,82%);
+	background: hsl(0deg,0%,8%);
+	color: white;
 	animation: fade-in 200ms 300ms both;
 }
 html {
@@ -39,12 +40,14 @@ body.loading {
 nav {
 	text-transform: uppercase;
 	user-select: none;
-}
-nav a{
-	display: block;
-	color: inherit;
 	font-size: .7rem;
-	height: 1.7rem;
+}
+nav li {
+	list-style: none;
+	line-height: 1.8rem;
+}
+nav a {
+	color: white;
 }
 nav::before{
 	content: 'The Arcadian';
@@ -60,7 +63,11 @@ main {
 }
 
 main a {
-	color: hsl(250deg,50%,50%);
+	color: hsl(220deg,90%,80%);
+}
+
+h1, h2, a.current {
+	color: hsl(300deg,50%,80%);
 }
 
 h1, h2 {
@@ -90,8 +97,13 @@ a {
 }
 
 a:hover {
-	color: white;
-	text-decoration: underline;
+	background: hsla(220deg,100%,70%,.2)
+}
+a:hover {
+	color: hsl(210deg,100%,70%);
+}
+a.current {
+	pointer-events: none;
 }
 
 ::selection {
