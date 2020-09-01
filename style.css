@@ -61,8 +61,7 @@ h2 {
 }
 
 br {
-	content: '';
-	margin-bottom: 1rem; /* Space between paragraphs */
+	line-height: 3;
 }
 
 a {
