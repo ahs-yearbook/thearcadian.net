@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Calder LC';
+  url('https://db.onlinewebfonts.com/t/3b62e4142e100992a53bc3c8fd657f1d.woff') format('woff')
+}
+
+html {
+  font-family: 'Calder LC', Helvetica, Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
