@@ -2,11 +2,13 @@
 @font-face {
 	font-family: 'Nunito';
 	font-weight: normal;
+	font-display: swap;
 	src: url('fonts/nunito-regular.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Nunito';
 	font-weight: bold;
+	font-display: swap;
 	src: url('fonts/nunito-bold.ttf') format('truetype');
 }
 
@@ -17,7 +19,7 @@ html {
 	margin: 0;
 	padding: 2rem; /* Minimum amount of space at the edge */
 	background: hsl(275deg,50%,82%);
-	animation: fade-in 500ms;
+	animation: fade-in 200ms 100ms both;
 }
 
 @keyframes fade-in {

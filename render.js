@@ -8,7 +8,9 @@ const sitemap = {
 	'feedback': 'feedback',
 	'apply': 'guide'
 }
+
 const menu = document.createElement('nav')
+
 for ( page in sitemap ) {
 	const link = document.createElement('a')
 	link.textContent = page
@@ -17,9 +19,8 @@ for ( page in sitemap ) {
 }
 const main = document.createElement('main')
 
-document.addEventListener( 'DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded',()=>{
 	main.innerHTML = snarkdown(document.body.textContent)
 	document.body.innerHTML = ''
 	document.body.append(menu,main)
 })
-
