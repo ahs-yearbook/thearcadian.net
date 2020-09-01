@@ -23,7 +23,7 @@ main {
 		linear-gradient(#28f,#f24);
 	width: 100vh;
 	height: 100vh;
-	padding: 30vh calc(50vh - 45vw);
+	padding: calc(50vh - 10rem) calc(50vh - 45vw);
 	max-width: 100vh;
 	border-radius: 50%;
 	color: white;
@@ -44,6 +44,9 @@ main a:hover{
 	background: white;
 	text-decoration: none;
 	color: black;
+}
+@media (max-aspect-ratio: 4/3){
+	nav { display: none }
 }
 		</style>
 		<script defer src='render.js'></script>
