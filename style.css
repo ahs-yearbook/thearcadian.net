@@ -37,9 +37,6 @@ nav a{
 	font-size: .7rem;
 	margin-bottom: 1rem;
 }
-nav a:not(:link){
-	display: none; /* Hide invalid links */
-}
 
 /* The amount of space around the text */
 main {

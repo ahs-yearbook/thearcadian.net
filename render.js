@@ -6,7 +6,7 @@ const sitemap = {
 	'staff': 'staff',
 	'senior ads': 'senior-quotes',
 	'feedback': 'feedback',
-	'apply': 'apply'
+	'apply': 'guide'
 }
 const menu = document.createElement('nav')
 for ( page in sitemap ) {
