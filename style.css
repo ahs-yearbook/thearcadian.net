@@ -1,22 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap')
+/* Imports all the fonts */
+@font-face {
+	font-family: 'Nunito';
+	font-weight: normal;
+	src: url('fonts/nunito-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Nunito';
+	font-weight: bold;
+	src: url('fonts/nunito-bold.ttf') format('truetype');
+}
 
+/* Font settings */
 html {
-  font-family: 'Nunito', Helvetica, Roboto, sans-serif;
-  font-size: 16px;
+	font-family: 'Nunito', Helvetica, Roboto, sans-serif; /* In case Nunito doesn't load, the rest are fallbacks */
+	font-size: 16pt; /* Standard font size for the web */
+	margin: 0;
+	padding: 2rem; /* Minimum amount of space at the edge */
+	background: hsl(275deg,50%,82%);
+	animation: fade-in 500ms;
 }
 
+@keyframes fade-in {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+/* Makes padding consistent */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
+nav a{
+	display: block;
+	text-transform: uppercase;
+	color: black;
+	font-size: .7rem;
+	margin-bottom: 1rem;
 }
 
-article {
-  padding: 1rem;
+/* The amount of space around the text */
+main {
+	max-width: 64ch; /* Text can at most be 64 characters wide */
+	margin: auto; /* Auto-expand margins, thereby centering itself */
+}
+
+h1, h2 {
+	font-weight: normal;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
 }
 
 h1 {
-  text-align: center;
+	text-align: center;
+	font-size: 2rem;
+}
+
+h2 {
+	border-top: 1px solid gray;
+	padding-top: 1.5rem;
+}
+
+br {
+	margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+a {
+	text-decoration: none;
+	color: hsl(250deg,50%,50%);
+	transition: 200ms;
+}
+a:hover {
+	color: white;
+	text-decoration: underline;
 }
