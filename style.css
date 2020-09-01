@@ -17,13 +17,13 @@ body.loading {
 	font-family: Nunito;
 	font-weight: normal;
 	font-display: swap;
-	src: url('fonts/nunito-regular.ttf') format('truetype');
+	src: url('fonts/nunito-regular.woff') format('woff');
 }
 @font-face {
 	font-family: Nunito;
 	font-weight: bold;
 	font-display: swap;
-	src: url('fonts/nunito-bold.ttf') format('truetype');
+	src: url('fonts/nunito-bold.woff') format('woff');
 }
 
 @keyframes fade-in {
