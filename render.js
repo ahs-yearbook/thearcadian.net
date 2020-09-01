@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 		const anchor = document.createElement('a')
 		anchor.textContent = page
 		anchor.href = link.href = sitemap[page]
-		menu.append(link)
+		menu.append(anchor)
 
 		document.head.append(link)
 	}
