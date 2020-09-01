@@ -11,25 +11,39 @@
 html {
 	background: black;
 	color: gray;
+	overflow: hidden;
 }
 main {
 	text-align: center;
 	position: absolute;
 	top:0;
-	left: calc(50vw - 50vmin);
+	left: calc(50vw - 50vh);
 	background:
 		radial-gradient(black 70%,transparent 70.1%),
 		linear-gradient(#28f,#f24);
-	width: 100vmin;
-	height: 100vmin;
-	padding-top: 30vmin;
-	max-width: 100%;
+	width: 100vh;
+	height: 100vh;
+	padding: 30vh calc(50vh - 45vw);
+	max-width: 100vh;
 	border-radius: 50%;
 	color: white;
 }
 h1 {
-	font-size: 4rem;
+	font-size: calc(1rem + 5vmin);
 	color: #aaf
+}
+main a {
+	display: inline-block;
+	border: 1px solid white;
+	padding: .5rem 1rem;
+	margin-top: 2rem;
+	color: white;
+	border-radius: 2px;
+}
+main a:hover{
+	background: white;
+	text-decoration: none;
+	color: black;
 }
 		</style>
 		<script defer src='render.js'></script>
@@ -38,5 +52,7 @@ h1 {
 # leave your legacy.
 
 We are Arcadia High's Advanced Journalism Class.
+
+[Learn more](announcements)
 	</body>
 </html>
