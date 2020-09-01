@@ -10,25 +10,20 @@ const sitemap = {
 }
 
 const menu = document.createElement('nav')
-let links = []
+for ( page in sitemap ) {
+	const anchor = document.createElement('a')
+	anchor.textContent = page
+	anchor.href = sitemap[page]
+	menu.append(anchor)
+}
 
 const main = document.createElement('main')
 
 document.addEventListener('DOMContentLoaded',()=>{
+	document.body.classList.add('loading')
 	main.innerHTML = snarkdown(document.body.textContent)
-
-	for ( page in sitemap ) {
-		const link = document.createElement('link')
-		link.rel = 'prerender'
-
-		const anchor = document.createElement('a')
-		anchor.textContent = page
-		anchor.href = link.href = sitemap[page]
-		menu.append(anchor)
-
-		document.head.append(link)
-	}
 
 	document.body.innerHTML = ''
 	document.body.append(menu,main)
+	document.body.classList.remove('loading')
 })
