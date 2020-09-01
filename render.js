@@ -22,7 +22,7 @@ for ( page in sitemap ) {
 const main = document.createElement('main')
 document.addEventListener('DOMContentLoaded',()=>{
 	document.body.classList.add('loading')
-	document.title += ' — The Arcadian'
+	if ( document.title !== 'The Arcadian' ) document.title += ' — The Arcadian'
 	main.innerHTML = snarkdown(document.body.textContent)
 	document.body.innerHTML = ''
 	document.body.append(menu,main)
