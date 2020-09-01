@@ -13,7 +13,7 @@ for ( page in sitemap ) {
 	const anchor = document.createElement('a')
 	anchor.textContent = page
 	anchor.href = sitemap[page]
-	if ( window.location.pathname.split('.')[0].includes(sitemap[page]) ){
+	if ( window.location.pathname.includes(sitemap[page]) ){
 		anchor.classList.add('current')
 	}
 	item.append(anchor)
